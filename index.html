@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App - By Pena</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+    YTUBE: https://www.youtube.com/watch?v=oMt3U1zfoe0&list=PL8ZDj6xPX-1UI3bljaDmJVP_xl79Ha5Jq    
+    MEDIUM: https://medium.com/@sharathchandark/how-to-build-a-todo-list-app-using-html-css-and-javascript-340cda6e3f9f
+    -->
+</head>
+<body>
+    <div class="container">
+        <div class="todo-header">
+            <h2>To Do List</h2>
+            <img src="images/to-do-list.gif" alt="To do list">
+        </div>
+        <div class="todo-body">
+            <input type="text" id="todo-text" class="todo-input" placeholder="Add your task">
+            <img 
+                src="images/plus.png" 
+                id="add-update-image" 
+                onclick="createToDoData()" 
+                alt="Add update button"
+            />
+        </div>
+        <h5 id="alert-msg"></h5>
+        <ul id="list-items" class="list-items"></ul>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
